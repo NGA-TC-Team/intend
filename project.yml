@@ -21,8 +21,8 @@ targets:
       - path: Assets.xcassets
     resources:
       - path: Resources
-      - path: en.lproj
-      - path: ko.lproj
+      - path: en.lproj/Localizable.strings
+      - path: ko.lproj/Localizable.strings
     settings:
       base:
         PRODUCT_NAME: Intend
