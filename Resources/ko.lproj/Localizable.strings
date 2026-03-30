@@ -1,0 +1,129 @@
+/* Actions */
+"action.apply" = "적용";
+"action.cancel" = "취소";
+"action.confirm" = "확인";
+"action.close" = "닫기";
+"action.copy" = "복사";
+"action.copied" = "복사됨";
+"action.open" = "열기";
+"action.later" = "나중에";
+"action.resetToDefault" = "기본값으로";
+"action.chooseImage" = "이미지 선택…";
+
+/* Preferences Window */
+"prefs.window.title" = "설정";
+"prefs.tab.editor" = "에디터";
+"prefs.tab.rendering" = "렌더링";
+"prefs.tab.theme" = "테마";
+"prefs.tab.background" = "배경";
+"prefs.section.font" = "폰트";
+"prefs.section.editing" = "편집";
+"prefs.section.paragraph" = "단락";
+"prefs.section.appearance" = "외관";
+"prefs.section.accentColor" = "강조색";
+"prefs.section.backgroundMode" = "배경 모드";
+"prefs.label.fontFamily" = "폰트 패밀리:";
+"prefs.label.fontSize" = "폰트 크기:";
+"prefs.label.tabSize" = "탭 너비:";
+"prefs.label.lineHeight" = "줄 간격 배율:";
+"prefs.label.colorMode" = "색상 모드:";
+"prefs.label.accentColor" = "강조색:";
+"prefs.label.mode" = "모드:";
+"prefs.label.alpha" = "투명도:";
+"prefs.label.overlayAlpha" = "불투명도:";
+"prefs.label.image" = "이미지:";
+"prefs.label.scale" = "배율:";
+"prefs.font.system" = "시스템 폰트 (SF Pro)";
+"prefs.appearance.system" = "시스템";
+"prefs.appearance.light" = "라이트";
+"prefs.appearance.dark" = "다크";
+"prefs.bg.none" = "없음";
+"prefs.bg.transparent" = "투명";
+"prefs.bg.image" = "이미지";
+"prefs.bg.fill" = "채움";
+"prefs.bg.tile" = "타일";
+"prefs.bg.center" = "가운데";
+"prefs.bg.noImageSelected" = "선택된 이미지 없음";
+
+/* Menus */
+"menu.app.about" = "Intend 정보";
+"menu.app.preferences" = "설정…";
+"menu.app.hide" = "Intend 숨기기";
+"menu.app.hideOthers" = "나머지 숨기기";
+"menu.app.showAll" = "모두 보이기";
+"menu.app.quit" = "Intend 종료";
+"menu.file" = "파일";
+"menu.file.new" = "새 파일";
+"menu.file.open" = "열기…";
+"menu.file.close" = "닫기";
+"menu.file.save" = "저장";
+"menu.file.saveAs" = "다른 이름으로 저장…";
+"menu.file.exportHTML" = "HTML로 내보내기…";
+"menu.file.exportPDF" = "PDF로 내보내기…";
+"menu.file.lock" = "잠금 (암호화 저장)…";
+"menu.edit" = "편집";
+"menu.edit.undo" = "실행 취소";
+"menu.edit.redo" = "다시 실행";
+"menu.edit.cut" = "오리기";
+"menu.edit.copy" = "복사";
+"menu.edit.paste" = "붙여넣기";
+"menu.edit.selectAll" = "모두 선택";
+"menu.edit.find" = "찾기…";
+"menu.edit.findReplace" = "찾기/바꾸기…";
+"menu.edit.findNext" = "다음 찾기";
+"menu.edit.findPrev" = "이전 찾기";
+"menu.view" = "보기";
+"menu.view.focusMode" = "포커스 모드";
+"menu.view.preview" = "미리보기 토글";
+"menu.view.toc" = "목차 패널 토글";
+"menu.view.sidebar" = "사이드바 토글";
+"menu.window" = "윈도우";
+"menu.window.minimize" = "최소화";
+"menu.window.zoom" = "확대/축소";
+"menu.window.nextTab" = "다음 탭";
+"menu.window.prevTab" = "이전 탭";
+"menu.window.bringAll" = "모두 앞으로";
+
+/* Find / Replace */
+"find.tooltip.regex" = "정규표현식";
+"find.tooltip.caseSensitive" = "대소문자 구분";
+"find.tooltip.prev" = "이전 (⌘⇧G)";
+"find.tooltip.next" = "다음 (⌘G)";
+"find.tooltip.close" = "닫기 (Esc)";
+"find.placeholder.find" = "찾기";
+"find.placeholder.replace" = "바꾸기";
+"find.action.replace" = "바꾸기";
+"find.action.replaceAll" = "모두";
+"find.result.none" = "없음";
+"find.result.replaced" = "%lld개 교체됨";
+
+/* Encryption */
+"encryption.title.save" = "암호화 저장";
+"encryption.title.unlock" = "파일 잠금 해제";
+"encryption.info.save" = "이 파일을 암호화하여 .mdxk 형식으로 저장합니다.\n비밀번호를 잃어버리면 복구할 수 없습니다.";
+"encryption.info.open" = "암호화된 파일을 열려면 비밀번호를 입력하세요.";
+"encryption.action.save" = "암호화 저장";
+"encryption.placeholder.password" = "비밀번호";
+"encryption.placeholder.confirm" = "비밀번호 확인";
+"encryption.validation.match" = "✓ 비밀번호가 일치합니다.";
+"encryption.validation.mismatch" = "✗ 비밀번호가 일치하지 않습니다.";
+"encryption.error.empty" = "비밀번호를 입력하세요.";
+
+/* Editor – Lock Panel */
+"editor.lock.placeholder.password" = "비밀번호";
+"editor.lock.placeholder.confirm" = "비밀번호 확인";
+"editor.lock.panel.message" = "암호화된 마크다운 파일을 저장할 위치와 비밀번호를 입력하세요.";
+"editor.lock.error.empty" = "비밀번호를 입력하세요.";
+"editor.lock.error.mismatch" = "비밀번호가 일치하지 않습니다.";
+
+/* Status Bar */
+"statusbar.count" = "공백 포함 %@자 · 공백 제외 %@자";
+"statusbar.today" = "오늘 %@";
+
+/* Sidebar */
+"sidebar.tag.all" = "모두";
+
+/* Default App Alert */
+"alert.defaultApp.message" = "Intend를 .md 파일의 기본 앱으로 설정할까요?";
+"alert.defaultApp.info" = "설정하면 Finder에서 마크다운 파일을 더블클릭할 때 Intend가 열립니다.\n언제든지 Finder의 「정보 가져오기」에서 변경할 수 있습니다.";
+"alert.defaultApp.setDefault" = "기본 앱으로 설정";

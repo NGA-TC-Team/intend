@@ -1,0 +1,11 @@
+build.log
+DerivedData/
+xcuserdata/
+*.xcuserstate
+hand-off.md
+
+scripts/
+
+build/
+dist/
+.xcodebuild/

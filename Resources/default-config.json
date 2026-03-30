@@ -1,0 +1,58 @@
+{
+  "editor": {
+    "font": { "family": ".AppleSystemUIFont", "size": 16 },
+    "lineHeight": 1.6,
+    "tabSize": 4,
+    "wordWrap": true,
+    "spellCheck": false,
+    "focusMode": false,
+    "typewriterMode": false
+  },
+  "rendering": {
+    "headings": {
+      "h1": { "scale": 2.0,  "weight": "semibold",  "color": null },
+      "h2": { "scale": 1.6,  "weight": "semibold",  "color": null },
+      "h3": { "scale": 1.3,  "weight": "semibold", "color": null },
+      "h4": { "scale": 1.1,  "weight": "semibold", "color": null },
+      "h5": { "scale": 1.0,  "weight": "medium",   "color": null },
+      "h6": { "scale": 1.0,  "weight": "medium",   "color": "#888888" }
+    },
+    "paragraph": { "lineHeight": 1.6, "firstLineIndent": 0, "spacing": 1.0 },
+    "blockquote": { "borderColor": null, "backgroundColor": null, "italic": true },
+    "codeBlock": {
+      "font": "Menlo", "fontSize": 14,
+      "syntaxTheme": "github-dark",
+      "showLineNumbers": false,
+      "backgroundColor": null
+    },
+    "inlineCode": { "font": "Menlo", "fontSize": 14, "backgroundColor": null },
+    "link": { "color": null, "underline": true },
+    "list": { "bulletStyle": "disc", "indentWidth": 16 },
+    "horizontalRule": { "style": "line", "color": null },
+    "table": { "borderColor": null, "headerBackground": null }
+  },
+  "theme": {
+    "name": "default",
+    "appearance": "auto",
+    "colors": {
+      "background": null,
+      "foreground": null,
+      "accent": null,
+      "selection": null
+    }
+  },
+  "export": {
+    "pdf": {
+      "paperSize": "A4",
+      "marginTop": 20, "marginBottom": 20,
+      "marginLeft": 25, "marginRight": 25,
+      "includeTableOfContents": false
+    },
+    "html": { "embedCSS": true, "syntaxHighlighting": true }
+  },
+  "keybindings": {
+    "togglePreview": "Cmd+Shift+P",
+    "focusMode":     "Cmd+Shift+F",
+    "exportPDF":     "Cmd+Shift+E"
+  }
+}

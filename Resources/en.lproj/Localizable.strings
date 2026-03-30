@@ -1,0 +1,129 @@
+/* Actions */
+"action.apply" = "Apply";
+"action.cancel" = "Cancel";
+"action.confirm" = "OK";
+"action.close" = "Close";
+"action.copy" = "Copy";
+"action.copied" = "Copied";
+"action.open" = "Open";
+"action.later" = "Later";
+"action.resetToDefault" = "Reset to Default";
+"action.chooseImage" = "Choose Image…";
+
+/* Preferences Window */
+"prefs.window.title" = "Settings";
+"prefs.tab.editor" = "Editor";
+"prefs.tab.rendering" = "Rendering";
+"prefs.tab.theme" = "Theme";
+"prefs.tab.background" = "Background";
+"prefs.section.font" = "Font";
+"prefs.section.editing" = "Editing";
+"prefs.section.paragraph" = "Paragraph";
+"prefs.section.appearance" = "Appearance";
+"prefs.section.accentColor" = "Accent Color";
+"prefs.section.backgroundMode" = "Background Mode";
+"prefs.label.fontFamily" = "Font Family:";
+"prefs.label.fontSize" = "Font Size:";
+"prefs.label.tabSize" = "Tab Width:";
+"prefs.label.lineHeight" = "Line Spacing:";
+"prefs.label.colorMode" = "Color Mode:";
+"prefs.label.accentColor" = "Accent Color:";
+"prefs.label.mode" = "Mode:";
+"prefs.label.alpha" = "Opacity:";
+"prefs.label.overlayAlpha" = "Overlay:";
+"prefs.label.image" = "Image:";
+"prefs.label.scale" = "Scale:";
+"prefs.font.system" = "System Font (SF Pro)";
+"prefs.appearance.system" = "System";
+"prefs.appearance.light" = "Light";
+"prefs.appearance.dark" = "Dark";
+"prefs.bg.none" = "None";
+"prefs.bg.transparent" = "Transparent";
+"prefs.bg.image" = "Image";
+"prefs.bg.fill" = "Fill";
+"prefs.bg.tile" = "Tile";
+"prefs.bg.center" = "Center";
+"prefs.bg.noImageSelected" = "No image selected";
+
+/* Menus */
+"menu.app.about" = "About Intend";
+"menu.app.preferences" = "Settings…";
+"menu.app.hide" = "Hide Intend";
+"menu.app.hideOthers" = "Hide Others";
+"menu.app.showAll" = "Show All";
+"menu.app.quit" = "Quit Intend";
+"menu.file" = "File";
+"menu.file.new" = "New File";
+"menu.file.open" = "Open…";
+"menu.file.close" = "Close";
+"menu.file.save" = "Save";
+"menu.file.saveAs" = "Save As…";
+"menu.file.exportHTML" = "Export as HTML…";
+"menu.file.exportPDF" = "Export as PDF…";
+"menu.file.lock" = "Lock (Encrypt)…";
+"menu.edit" = "Edit";
+"menu.edit.undo" = "Undo";
+"menu.edit.redo" = "Redo";
+"menu.edit.cut" = "Cut";
+"menu.edit.copy" = "Copy";
+"menu.edit.paste" = "Paste";
+"menu.edit.selectAll" = "Select All";
+"menu.edit.find" = "Find…";
+"menu.edit.findReplace" = "Find & Replace…";
+"menu.edit.findNext" = "Find Next";
+"menu.edit.findPrev" = "Find Previous";
+"menu.view" = "View";
+"menu.view.focusMode" = "Focus Mode";
+"menu.view.preview" = "Toggle Preview";
+"menu.view.toc" = "Toggle TOC Panel";
+"menu.view.sidebar" = "Toggle Sidebar";
+"menu.window" = "Window";
+"menu.window.minimize" = "Minimize";
+"menu.window.zoom" = "Zoom";
+"menu.window.nextTab" = "Next Tab";
+"menu.window.prevTab" = "Previous Tab";
+"menu.window.bringAll" = "Bring All to Front";
+
+/* Find / Replace */
+"find.tooltip.regex" = "Regular Expression";
+"find.tooltip.caseSensitive" = "Case Sensitive";
+"find.tooltip.prev" = "Previous (⌘⇧G)";
+"find.tooltip.next" = "Next (⌘G)";
+"find.tooltip.close" = "Close (Esc)";
+"find.placeholder.find" = "Find";
+"find.placeholder.replace" = "Replace";
+"find.action.replace" = "Replace";
+"find.action.replaceAll" = "All";
+"find.result.none" = "None";
+"find.result.replaced" = "%lld replaced";
+
+/* Encryption */
+"encryption.title.save" = "Save Encrypted";
+"encryption.title.unlock" = "Unlock File";
+"encryption.info.save" = "This file will be encrypted and saved in .mdxk format.\nLost passwords cannot be recovered.";
+"encryption.info.open" = "Enter the password to open this encrypted file.";
+"encryption.action.save" = "Save Encrypted";
+"encryption.placeholder.password" = "Password";
+"encryption.placeholder.confirm" = "Confirm Password";
+"encryption.validation.match" = "✓ Passwords match.";
+"encryption.validation.mismatch" = "✗ Passwords do not match.";
+"encryption.error.empty" = "Please enter a password.";
+
+/* Editor – Lock Panel */
+"editor.lock.placeholder.password" = "Password";
+"editor.lock.placeholder.confirm" = "Confirm Password";
+"editor.lock.panel.message" = "Enter a save location and password for the encrypted Markdown file.";
+"editor.lock.error.empty" = "Please enter a password.";
+"editor.lock.error.mismatch" = "Passwords do not match.";
+
+/* Status Bar */
+"statusbar.count" = "%@ chars (incl. spaces)  ·  %@ (excl. spaces)";
+"statusbar.today" = "Today %@";
+
+/* Sidebar */
+"sidebar.tag.all" = "All";
+
+/* Default App Alert */
+"alert.defaultApp.message" = "Set Intend as the default app for .md files?";
+"alert.defaultApp.info" = "When set, double-clicking a Markdown file in Finder will open it with Intend.\nYou can change this anytime in Finder's Get Info.";
+"alert.defaultApp.setDefault" = "Set as Default App";

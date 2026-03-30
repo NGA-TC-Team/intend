@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 로컬 Mermaid JS 필요: Resources/mermaid.min.js
+     다운로드: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js -->
+<script src="mermaid.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: white; padding: 8px; }
+  #diagram { display: inline-block; }
+  #diagram svg { max-width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<div id="diagram"></div>
+<script>
+if (typeof mermaid !== 'undefined') {
+  mermaid.initialize({ startOnLoad: false, theme: 'default', securityLevel: 'loose' });
+}
+
+window.renderDiagram = function(source) {
+  var el = document.getElementById('diagram');
+  if (typeof mermaid === 'undefined') {
+    el.textContent = source;
+    window.webkit.messageHandlers.rendered.postMessage('0,0');
+    return;
+  }
+  try {
+    mermaid.render('mermaid-svg-' + Date.now(), source).then(function(result) {
+      el.innerHTML = result.svg;
+      var r = el.getBoundingClientRect();
+      var dim = Math.ceil(r.width) + ',' + Math.ceil(r.height);
+      document.title = dim;
+      window.webkit.messageHandlers.rendered.postMessage(dim);
+    }).catch(function(e) {
+      el.textContent = source;
+      window.webkit.messageHandlers.rendered.postMessage('0,0');
+    });
+  } catch(e) {
+    el.textContent = source;
+    window.webkit.messageHandlers.rendered.postMessage('0,0');
+  }
+};
+</script>
+</body>
+</html>

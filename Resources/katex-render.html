@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 로컬 KaTeX 파일 필요: Resources/katex.min.css, Resources/katex.min.js
+     다운로드: https://github.com/KaTeX/KaTeX/releases -->
+<link rel="stylesheet" href="katex.min.css">
+<script src="katex.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: transparent;
+    padding: 2px 6px;
+    font-size: 14px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  #math { display: inline-block; }
+  .katex { font-size: 1.1em; }
+  .katex-display { margin: 4px 0; }
+</style>
+</head>
+<body>
+<span id="math"></span>
+<script>
+window.renderMath = function(latex, displayMode) {
+  var el = document.getElementById('math');
+  try {
+    katex.render(latex, el, {
+      displayMode: displayMode,
+      throwOnError: false,
+      errorColor: '#e67e22'
+    });
+    // 크기를 title에 실어 Swift 쪽에서 읽음
+    var r = el.getBoundingClientRect();
+    document.title = Math.ceil(r.width) + ',' + Math.ceil(r.height);
+  } catch(e) {
+    el.textContent = latex;
+    document.title = '0,0';
+  }
+  window.webkit.messageHandlers.rendered.postMessage(document.title);
+};
+</script>
+</body>
+</html>
