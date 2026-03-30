@@ -53,6 +53,7 @@
 		D2C16BB5ECD9D80C51C8AE8E /* LatexRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304DCBFF3B615F425AB130C /* LatexRenderer.swift */; };
 		D9E9DEAFB1F39B584427E2ED /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D942BE4E3D1ED6DDB27F88 /* EditorViewController.swift */; };
 		DD442D2BFD2A12DDA533364D /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2B54DBC27AF1BD31D424EE /* RenderNode.swift */; };
+		DE6B1C9AD06E00CDD28E172E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B81128EA03BE27CB5D98D2F2 /* Localizable.strings */; };
 		E1B2EEF5B8E1B785E2B7DB04 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60D93DCC37E4C372068EB5C /* TabBarView.swift */; };
 		E336AB2EFA9155F29A364B5B /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07485C985F7F49A095E9880F /* MarkdownTextView.swift */; };
 		E3ABBC3F7E741406B6B78F47 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4984B94F9C8A82001884893 /* TabItem.swift */; };
@@ -130,6 +131,8 @@
 		F6FC3CEE49C6E90354FFCC4C /* MermaidRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidRenderer.swift; sourceTree = "<group>"; };
 		F7DAC955F2DA7508AA836260 /* FormulaAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaAttachment.swift; sourceTree = "<group>"; };
 		F9216F2DE84021D2B62A3932 /* AttributeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeRenderer.swift; sourceTree = "<group>"; };
+		FB590418386CF8597236F208 /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE772CC3A73262A14D4CEDAB /* ko */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF0266ACDFB57B2930D6025B /* Intend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -251,6 +254,7 @@
 				2E9F946EC5D1306D576AEE53 /* Sources */,
 				50D0107A703E67AA768CC96B /* Tests */,
 				A574B48F587924F6DFF4F693 /* Products */,
+				B81128EA03BE27CB5D98D2F2 /* Localizable.strings */,
 			);
 			sourceTree = "<group>";
 		};
@@ -399,8 +403,6 @@
 				A8E1026869A525889A72D0D2 /* PBXTargetDependency */,
 			);
 			name = IntendTests;
-			packageProductDependencies = (
-			);
 			productName = IntendTests;
 			productReference = 75E617365DEE664B49AF2BB1 /* IntendTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -442,6 +444,7 @@
 			knownRegions = (
 				Base,
 				en,
+				ko,
 			);
 			mainGroup = 87E145148AE1FC2448CF296B;
 			minimizedProjectReferenceProxies = 1;
@@ -465,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6461F7FDBDE30ED9AB6DF3F /* Assets.xcassets in Resources */,
+				DE6B1C9AD06E00CDD28E172E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +550,18 @@
 			targetProxy = 2D3C447C6F91C45367EA801F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B81128EA03BE27CB5D98D2F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB590418386CF8597236F208 /* en */,
+				FE772CC3A73262A14D4CEDAB /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0CBEC4578E8F899C087461A5 /* Release */ = {

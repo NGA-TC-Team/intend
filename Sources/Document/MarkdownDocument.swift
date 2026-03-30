@@ -40,9 +40,18 @@ final class MarkdownDocument: NSDocument {
 
     override class var autosavesInPlace: Bool { true }
 
-    /// 새 문서 저장 시 파일 포맷 목록 — 마크다운을 기본으로, 암호화를 두 번째로.
+    /// 파일 포맷 목록.
+    /// Save As / Save To 패널에서만 두 포맷을 모두 노출.
+    /// 일반 저장·자동저장은 현재 파일 타입만 반환해 암호화 시트가 불필요하게 뜨는 것을 막음.
     override func writableTypes(for saveOperation: NSDocument.SaveOperationType) -> [String] {
-        ["net.daringfireball.markdown", "com.intend.encrypted-markdown"]
+        switch saveOperation {
+        case .saveAsOperation, .saveToOperation:
+            return ["net.daringfireball.markdown", "com.intend.encrypted-markdown"]
+        default:
+            return isEncryptedFile
+                ? ["com.intend.encrypted-markdown"]
+                : ["net.daringfireball.markdown"]
+        }
     }
 
     /// 파일 타입별 기본 확장자 명시 — macOS가 plain-text UTI에서 .txt를 쓰는 것을 방지.
